@@ -10,8 +10,12 @@ var AppJS = {
     },
 
     handlers: function () {
-        $('.sandWhich, .menu a').on('click', function()  { AppJS.switchMenu(); });
+        $('.sandWhich').on('click', function()  { AppJS.switchMenu(); });
+        $('.menu a').on('click', function(e)  { AppJS.closeMenu(e) });
         $('body').on('click', function(e)  { AppJS.bodyClick(e); });
+        $('.addApplication').on('click', function()  { $('.modalBox').addClass('openForm'); });
+        $('.hover, .close').on('click', function()  { $('.modalBox').removeClass('openForm openPortfolio'); });
+        $('#portfolio .site a').on('click', function(e)  { e.preventDefault(); $('.modalBox').addClass('openPortfolio'); });
     },
 
     switchMenu: function() {
@@ -22,6 +26,13 @@ var AppJS = {
             menu.slideDown();
         } else {
             menu.slideUp();
+        }
+    },
+
+    closeMenu: function (e) {
+        if (!$(e.target).closest('openMenu').length) {
+            $('.menu').slideUp();
+            $('header').removeClass('openMenu');
         }
     },
 
@@ -39,7 +50,17 @@ var AppJS = {
             paginationClickable: true,
             speed: 700,
             loop: true
-        })
+        });
+
+        var port = new Swiper ('#portSlider', {
+            prevButton: '.port-prev',
+            nextButton: '.port-next',
+            speed: 700,
+            loop: true,
+            onInit: function () {
+                $('.close').on('click', function()  { $('.modalBox').removeClass('openPortfolio'); });
+            }
+        });
     }
 
 };

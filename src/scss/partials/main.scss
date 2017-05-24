@@ -4,12 +4,95 @@
 	100% {top: 8px;}
 }
 
+body {
+	font-family: 'latoregular', sans-serif;
+}
+
+section {
+	background: #fff;
+}
+
+.form {
+	width: 84%;
+	display: block;
+	margin: 0 auto 60px;
+	border-radius: 6px;
+	box-shadow: 0 6px 12px 0 rgba(0, 1, 1, 0.15);
+	background: #fff;
+	.head {
+		min-height: 100px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-transform: uppercase;
+		font-size: 20px;
+		line-height: 30px;
+		text-align: center;
+		border-bottom: 1px solid #eaeaea;
+		position: relative;
+		padding: 10px 15px;
+		&:before {
+			position: absolute;
+			content: '';
+			left: calc(50% - 15px);
+			bottom: -30px;
+			border: 15px solid transparent;
+			border-top: 15px solid #d3d3d3;
+		}
+	}
+	.body {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: 30px 0;
+		.inputBox {
+			max-width: 300px;
+			width: 100%;
+			margin: 20px 30px;
+			input {
+				width: 100%;
+				border: none;
+				outline: none;
+				font-size: 14px;
+				border-bottom: 4px solid $lighterRedCol;
+				padding: 5px 0;
+				&:hover, &:focus {
+					border-bottom: 4px solid $lightRedCol;
+				}
+			}
+		}
+	}
+	.action {
+		display: flex;
+		justify-content: center;
+		padding: 0 15px;
+		button {
+			padding: 20px 15px;
+			line-height: 20px;
+			text-transform: uppercase;
+			color: #fff;
+			border-radius: 4px;
+			background: $lightRedCol;
+			box-shadow: 0 6px 10px 0 rgba(0, 1, 1, 0.15);
+			border: none;
+			outline: none;
+			font-size: 14px;
+			max-width: 420px;
+			width: 80%;
+			margin-bottom: 40px;
+			&:hover {
+				background: $hoverBtn;
+			}
+		}
+	}
+}
+
 .content {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 16px;
 	box-sizing: border-box;
-	font-family: 'latoregular', sans-serif;
 	color: $textCol;
 
 	.title {
@@ -29,81 +112,6 @@
 		text-align: center;
 	}
 
-	.form {
-		width: 84%;
-		display: block;
-		margin: 0 auto 60px;
-		border-radius: 6px;
-		box-shadow: 0 6px 12px 0 rgba(0, 1, 1, 0.15);
-		background: #fff;
-		.head {
-			min-height: 100px;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			text-transform: uppercase;
-			font-size: 20px;
-			line-height: 30px;
-			text-align: center;
-			border-bottom: 1px solid #eaeaea;
-			position: relative;
-			padding: 10px 15px;
-			&:before {
-				position: absolute;
-				content: '';
-				left: calc(50% - 15px);
-				bottom: -30px;
-				border: 15px solid transparent;
-				border-top: 15px solid #d3d3d3;
-			}
-		}
-		.body {
-			display: flex;
-			flex-direction: row;
-			flex-wrap: wrap;
-			justify-content: center;
-			margin: 30px 0;
-			.inputBox {
-				max-width: 300px;
-				width: 100%;
-				margin: 20px 30px;
-				input {
-					width: 100%;
-					border: none;
-					outline: none;
-					font-size: 14px;
-					border-bottom: 4px solid $lighterRedCol;
-					padding: 5px 0;
-					&:hover, &:focus {
-						border-bottom: 4px solid $lightRedCol;
-					}
-				}
-			}
-		}
-		.action {
-			display: flex;
-			justify-content: center;
-			padding: 0 15px;
-			button {
-				padding: 20px 15px;
-				line-height: 20px;
-				text-transform: uppercase;
-				color: #fff;
-				border-radius: 4px;
-				background: $lightRedCol;
-				box-shadow: 0 6px 10px 0 rgba(0, 1, 1, 0.15);
-				border: none;
-				outline: none;
-				font-size: 14px;
-				max-width: 420px;
-				width: 80%;
-				margin-bottom: 40px;
-				&:hover {
-					background: $hoverBtn;
-				}
-			}
-		}
-	}
 	.sectionAction {
 		display: flex;
 		justify-content: center;
@@ -189,6 +197,7 @@ header {
 	box-sizing: border-box;
 	overflow: hidden;
 	position: relative;
+	background: transparent;
 	.video {
 		min-width: 100%;
 		min-height: 100%;
@@ -202,6 +211,7 @@ header {
 		.form {
 			background: rgba(255, 255, 255, 0.2);
 			color: #eaeaea;
+			margin-bottom: 90px;
 			.head {
 				text-transform: none;
 				font-family: 'avantiregular', sans-serif;
@@ -315,6 +325,7 @@ header {
 			width: 25%;
 			padding: 20px 55px;
 			min-width: 178px;
+			box-sizing: border-box;
 			.topText {
 				font-family: 'latoregular', sans-serif;
 				font-size: 16px;
