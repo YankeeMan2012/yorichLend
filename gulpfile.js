@@ -14,7 +14,7 @@ var paths = {
             app: 'src/scss/style.scss',
             appAll: 'src/scss/**/*.scss',
             libs: [
-                './node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css',
+                // './node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css',
                 './node_modules/swiper/dist/css/swiper.min.css'
             ]
         },
@@ -29,7 +29,6 @@ var paths = {
                 //'./node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js',
                 './node_modules/swiper/dist/js/swiper.jquery.js',
                 //'./src/js/detect.js'
-                './src/js/bootstrap-sprockets.js'
             ]
         }
     },
