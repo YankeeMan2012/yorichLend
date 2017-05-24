@@ -1,0 +1,628 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YoRich</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/libs.css">
+    <link rel="icon" href="img/icon/favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="content">
+            <img src="img/logo/logo.png" alt="" class="logo">
+            <nav class="menu">
+                <a href="#">Преимущества</a>
+                <a href="#">Бесплатно</a>
+                <a href="#">Услуги</a>
+                <a href="#">Портфолио</a>
+                <a href="#">Отзывы</a>
+                <a href="#">Блог</a>
+                <a href="#">Контакты</a>
+            </nav>
+            <ul class="sandWhich">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </header>
+    <section id="home">
+        <video autoplay loop muted class="video">
+            <source src="video/stockholm27.mp4" type="video/mp4">
+        </video>
+        <div class="content">
+            <h1>Мы создаем сайты для<br /> достижения Ваших бизнес-целей</h1>
+            <form class="form" action="/">
+                <div class="head">
+                    <div class="wrap">
+                        <span>Закажите</span> стильный <span>сайт «под ключ»</span><br /> у креативной команды разработчиков
+                    </div></div>
+                <div class="body">
+                    <div class="inputBox">
+                        <input name="login" type="text" placeholder="Введите телефон или почту">
+                        <!--<p class="error"></p>-->
+                    </div>
+                    <div class="inputBox">
+                        <input name="login" type="text" placeholder="Введите имя (не обязательно)">
+                        <!--<p class="error"></p>-->
+                    </div>
+                </div>
+                <div class="action">
+                    <button type="button">Получить бесплатный концепт</button>
+                </div>
+            </form>
+        </div>
+        <div class="scroll"></div>
+    </section>
+    <!--<header class="container-fluid noPadding">-->
+        <!--&lt;!&ndash;<nav class="navbar navbar-default navbar-fixed-top" role="navigation">&ndash;&gt;-->
+        <!--<nav class="navbar navbar-default" role="navigation">-->
+            <!--<div class="container">-->
+                <!--&lt;!&ndash; Бренд та перемикач згруповані для кращого відображення на мобільних пристроях &ndash;&gt;-->
+                <!--<div class="navbar-header">-->
+                    <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">-->
+                        <!--<span class="sr-only">Toggle navigation</span>-->
+                        <!--<span class="icon-bar"></span>-->
+                        <!--<span class="icon-bar"></span>-->
+                        <!--<span class="icon-bar"></span>-->
+                    <!--</button>-->
+                    <!--<a class="navbar-brand" href="index.html">-->
+                        <!--<img  height="43" width="160" src="img/logo/logo.png"/>-->
+                    <!--</a>-->
+                <!--</div>-->
+
+                <!--&lt;!&ndash; Зібрано навігаційні лінки, форми, та інший вміст для переключення &ndash;&gt;-->
+                <!--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">-->
+                    <!--<ul class="nav navbar-nav navbar-right">-->
+                        <!--<li><a href="#">Преимущества</a></li>-->
+                        <!--<li><a href="#">Бесплатно</a></li>-->
+                        <!--<li><a href="#">Услуги</a></li>-->
+                        <!--<li><a href="#">Портфолио</a></li>-->
+                        <!--<li><a href="#">Отзывы</a></li>-->
+                        <!--<li><a href="#">Блог</a></li>-->
+                        <!--<li><a href="#">Контакты</a></li>-->
+                    <!--</ul>-->
+                <!--</div>&lt;!&ndash; /.navbar-collapse &ndash;&gt;-->
+            <!--</div>&lt;!&ndash; /.container-fluid &ndash;&gt;-->
+        <!--</nav>-->
+    <!--</header>-->
+    <!--<div class="container-fluid noPadding screen-block">-->
+        <!--<div class="unique">-->
+            <!--<video autoplay loop muted class="forvideo">-->
+                <!--<source src="video/stockholm27.mp4" type="video/mp4">-->
+            <!--</video>-->
+        <!--</div>-->
+        <!--<div class="filter-ocean">-->
+        <!--</div>-->
+        <!--<div class="container">-->
+            <!--<div class="row">-->
+                <!--<div class="col-xs-12 content-home">-->
+                    <!--<div class="row">-->
+                        <!--<div class="container-title text-center shadow-text">-->
+                            <!--<h1>Мы создаем сайты для <br> достижения Ваших бизнес-целей</h1>-->
+                        <!--</div>-->
+                        <!--<div class="container-form">-->
+                            <!--<div class="row noMargin">-->
+                                <!--<div class="col-xs-12 text-center shadow-text form-title-block noPadding">-->
+                                    <!--<h3><b>Закажите</b> стильный <b>сайт «под ключ»</b><br> у креативной команды разработчиков</h3>-->
+                                <!--</div>-->
+                                <!--<div class="col-xs-12">-->
+                                    <!--<div class="triangle-block"></div>-->
+                                <!--</div>-->
+                                <!--<div class="col-xs-12">-->
+                                    <!--<div class="row">-->
+                                        <!--<form>-->
+                                            <!--<div class="col-xs-12 col-sm-6 text-right input-block">-->
+                                                <!--<input type="text"-->
+                                                       <!--placeholder="Введите телефон или почту"-->
+                                                       <!--class="home-form-input">-->
+                                            <!--</div>-->
+                                            <!--<div class="col-xs-12 col-sm-6 text-left input-block">-->
+                                                <!--<input type="text"-->
+                                                       <!--placeholder="Введите имя (не обязательно)"-->
+                                                       <!--class="home-form-input">-->
+                                            <!--</div>-->
+                                            <!--<div class="col-xs-12 text-center">-->
+                                                <!--<input type="submit"-->
+                                                       <!--value="ПОЛУЧИТЬ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ"-->
+                                                       <!--class="home-form-submit">-->
+                                            <!--</div>-->
+                                        <!--</form>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="col-xs-12 bottom-line"></div>-->
+    <!--</div>-->
+
+
+
+    <!--<div class="container-fluid screen-block">-->
+        <!--bla-->
+        <!--<div class="container">-->
+            <!--bla-->
+        <!--</div>-->
+    <!--</div>-->
+    <section id="advantages">
+        <div class="content">
+            <p class="title">7 весомых преимуществ работы с нами</p>
+            <ul class="list first">
+                <li class="advantage">
+                    Минимальные сроки
+                    разработки – от 7 дней
+                </li>
+                <li class="advantage">
+                    Полностью погружаемся
+                    в потребности клиента
+                </li>
+                <li class="advantage">
+                    Создаем только
+                    индивидуальный дизайн
+                </li>
+            </ul>
+            <ul class="list second">
+                <li class="advantage">
+                    Гарантируем
+                    максимальную оптимизацию
+                    под Ваши задачи
+                </li>
+                <li class="advantage">
+                    Используем только
+                    передовые технологии
+                </li>
+                <li class="advantage">
+                    Ваш проект будут выполнять
+                    только квалифицированные
+                    специалисты
+                </li>
+                <li class="advantage">
+                    Работаем до полного
+                    утверждения Вами. Вносим
+                    правки по Вашему желанию
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="numbers">
+        <div class="content">
+            <p class="title">Цифры говорят о нас!</p>
+            <p class="description">Мы команда увлечённых разработчиков сайтов!<br />
+                Работаем на совесть и результат, к каждому новому заказу подходим основательно.</p>
+            <ul class="list">
+                <li>
+                    <div class="topText">более </div>
+                    <div class="num">567</div>
+                    <div class="text">выполненных заказов </div>
+                </li>
+                <li>
+                    <div class="topText">более </div>
+                    <div class="num">70</div>
+                    <div class="text">городов откуда заказывали </div>
+                </li>
+                <li>
+                    <div class="topText">около  </div>
+                    <div class="num">88%</div>
+                    <div class="text">повторных заказов </div>
+                </li>
+                <li>
+                    <div class="topText">свыше </div>
+                    <div class="num">24</div>
+                    <div class="text">месяцев успешной работы </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="free">
+        <div class="content">
+            <p class="title">Предлагаем Вам БЕСПЛАТНУЮ услугу</p>
+            <p class="description">Думаете, что мы как все? Мы докажем, что это не так!<br />
+                Мы можем сделать Вам абсолютно БЕСПЛАТНО дизайн-концепт<br />
+                одной из целевой страниц Вашего будущего сайта.</p>
+            <img class="freeImg" src="img/free.png" alt="free">
+            <form class="form" action="/">
+                <div class="head">Оставьте заявку,<br /> и мы свяжемся с Вами в самое ближайшее время</div>
+                <div class="body">
+                    <div class="inputBox">
+                        <input name="login" type="text" placeholder="Введите телефон или почту">
+                        <!--<p class="error"></p>-->
+                    </div>
+                    <div class="inputBox">
+                        <input name="login" type="text" placeholder="Введите имя (не обязательно)">
+                        <!--<p class="error"></p>-->
+                    </div>
+                </div>
+                <div class="action">
+                    <button type="button">Получить бесплатный концепт</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section id="services">
+        <div class="content">
+            <p class="title">Наши услуги</p>
+            <ul class="list">
+                <li class="card">
+                    <div class="head">
+                        Landing page
+                        <div class="icon"></div>
+                    </div>
+                    <ul class="body">
+                        <li class="item">8-10 тематических блоков + 1-2 модальных окна; </li>
+                        <li class="item">формы захвата данных; </li>
+                        <li class="subTitle">Бесплатные дополнительные услуги:</li>
+                        <li class="item">подключение аналитики. </li>
+                    </ul>
+                    <div class="footer">
+                        <div class="price">от 14590 руб. и 19 дней</div>
+                        <div class="addApplication">Оставить заявку</div>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="head">
+                        Сайт-визитка
+                        <div class="icon"></div>
+                    </div>
+                    <ul class="body">
+                        <li class="item">3 типовые уникальные страницы; </li>
+                        <li class="item">админ-панель для управления контентом; </li>
+                        <li class="subTitle">Бесплатные дополнительные услуги:</li>
+                        <li class="item">подключение аналитики. </li>
+                    </ul>
+                    <div class="footer">
+                        <div class="price">от 999 руб. и 15 дней</div>
+                        <div class="addApplication">Оставить заявку</div>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="head">
+                        Корпоративный сайт
+                        <div class="icon"></div>
+                    </div>
+                    <ul class="body">
+                        <li class="item">5 типовых уникальных страниц; </li>
+                        <li class="item">админ-панель для управления контентом; </li>
+                        <li class="item">формы захвата данных; </li>
+                        <li class="item">новостная лента; </li>
+                        <li class="subTitle">Бесплатные дополнительные услуги:</li>
+                        <li class="item">поддержка сайта 30 дней;</li>
+                        <li class="item">подключение аналитики; </li>
+                        <li class="item">добавление сайта в поиск. системы. </li>
+                    </ul>
+                    <div class="footer">
+                        <div class="price">от 5999 руб. и 15 дней</div>
+                        <div class="addApplication">Оставить заявку</div>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="head">
+                        Интернет-каталог
+                        <div class="icon"></div>
+                    </div>
+                    <ul class="body">
+                        <li class="item">6 типовых уникальных страниц; </li>
+                        <li class="item">админ-панель для управления контентом; </li>
+                        <li class="item">каталог;</li>
+                        <li class="item">формы захвата данных;</li>
+                        <li class="subTitle">Бесплатные дополнительные услуги:</li>
+                        <li class="item">поддержка сайта 30 дней;</li>
+                        <li class="item">подключение аналитики; </li>
+                        <li class="item">добавление сайта в поиск. системы. </li>
+                    </ul>
+                    <div class="footer">
+                        <div class="price">от 8999 руб. и 15 дней</div>
+                        <div class="addApplication">Оставить заявку</div>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="head">
+                        Интернет-магазин
+                        <div class="icon"></div>
+                    </div>
+                    <ul class="body">
+                        <li class="item">7-8 типовых уникальных страниц; </li>
+                        <li class="item">админ-панель для управления контентом; </li>
+                        <li class="item">онлайн-оплата, корзина, каталог;</li>
+                        <li class="item">формы захвата данных;</li>
+                        <li class="subTitle">Бесплатные дополнительные услуги:</li>
+                        <li class="item">поддержка сайта 30 дней;</li>
+                        <li class="item">подключение аналитики; </li>
+                        <li class="item">добавление сайта в поиск. системы. </li>
+                    </ul>
+                    <div class="footer">
+                        <div class="price">от 10999 руб. и 25 дней</div>
+                        <div class="addApplication">Оставить заявку</div>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="head">
+                        Блог/новостной портал
+                        <div class="icon"></div>
+                    </div>
+                    <ul class="body">
+                        <li class="item">4 типовые уникальные страницы; </li>
+                        <li class="item">админ-панель для управления контентом; </li>
+                        <li class="item">формы захвата данных; </li>
+                        <li class="item">новостная лента; </li>
+                        <li class="subTitle">Бесплатные дополнительные услуги:</li>
+                        <li class="item">подключение аналитики. </li>
+                        <li class="item">добавление сайта в поиск. системы. </li>
+                    </ul>
+                    <div class="footer">
+                        <div class="price">от 759 руб. и 14 дней</div>
+                        <div class="addApplication">Оставить заявку</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="preview">
+        <img src="img/preview.png" alt="preview">
+    </section>
+    <section id="portfolio">
+        <div class="content">
+            <p class="title">Наше портфолио</p>
+            <p class="description">Мы гордимся каждой своей работой, ведь делаем их с душой!</p>
+            <ul class="list">
+                <li class="site">
+                    <img src="img/portfolio1.png" alt="site">
+                    <a href="#">Посмотреть</a>
+                </li>
+                <li class="site">
+                    <img src="img/portfolio1.png" alt="site">
+                    <a href="#">Посмотреть</a>
+                </li>
+                <li class="site">
+                    <img src="img/portfolio1.png" alt="site">
+                    <a href="#">Посмотреть</a>
+                </li>
+                <li class="site">
+                    <img src="img/portfolio1.png" alt="site">
+                    <a href="#">Посмотреть</a>
+                </li>
+                <li class="site">
+                    <img src="img/portfolio1.png" alt="site">
+                    <a href="#">Посмотреть</a>
+                </li>
+                <li class="site">
+                    <img src="img/portfolio1.png" alt="site">
+                    <a href="#">Посмотреть</a>
+                </li>
+                <li class="site">
+                    <img src="img/portfolio1.png" alt="site">
+                    <a href="#">Посмотреть</a>
+                </li>
+                <li class="site">
+                    <img src="img/portfolio1.png" alt="site">
+                    <a href="#">Посмотреть</a>
+                </li>
+                <li class="site">
+                    <img src="img/portfolio1.png" alt="site">
+                    <a href="#">Посмотреть</a>
+                </li>
+            </ul>
+            <div class="sectionAction">
+                <a href="#" class="link">Смотерть еще</a>
+            </div>
+        </div>
+    </section>
+    <section id="recall">
+        <div class="content">
+            <p class="title">О нас говорят</p>
+            <div class="swiper-container" id="slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="person">
+                            <div class="left">
+                                <div class="avatar">
+                                    <img src="img/avatar.jpg" alt="avatar">
+                                </div>
+                                <div class="info">
+                                    <div class="top bold">Евгений Вольнов</div>
+                                    <div class="bottom">
+                                        <div>Transtar Corp.</div>
+                                        <div>Гендиректор</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="info">
+                                    <div class="top">
+                                        <div class="bold">Заказал:</div>
+                                        <div>Корпоративный сайт</div>
+                                        <a href="">transtar.com</a>
+                                    </div>
+                                    <div class="bottom">17.05.2017</div>
+                                </div>
+                            </div>
+                        </div>
+                        <p>С другой стороны реализация намеченных плановых заданий влечет за собой процесс внедрения и модернизации форм развития. Значимость этих проблем настолько очевидна, что новая модель организационной деятельности влечет за собой процесс внедрения и модернизации форм развития. </p>
+                        <p>Равным образом укрепление и развитие структуры позволяет выполнять важные задания по разработке новых предложений.</p>
+                        <p>Не следует, однако забывать, что реализация намеченных плановых заданий представляет собой интересный эксперимент проверки дальнейших направлений развития.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="person">
+                            <div class="left">
+                                <div class="avatar">
+                                    <img src="img/avatar.jpg" alt="avatar">
+                                </div>
+                                <div class="info">
+                                    <div class="top bold">Евгений Вольнов</div>
+                                    <div class="bottom">
+                                        <div>Transtar Corp.</div>
+                                        <div>Гендиректор</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="info">
+                                    <div class="top">
+                                        <div class="bold">Заказал:</div>
+                                        <div>Корпоративный сайт</div>
+                                        <a href="">transtar.com</a>
+                                    </div>
+                                    <div class="bottom">17.05.2017</div>
+                                </div>
+                            </div>
+                        </div>
+                        <p>С другой стороны реализация намеченных плановых заданий влечет за собой процесс внедрения и модернизации форм развития. Значимость этих проблем настолько очевидна, что новая модель организационной деятельности влечет за собой процесс внедрения и модернизации форм развития. </p>
+                        <p>Равным образом укрепление и развитие структуры позволяет выполнять важные задания по разработке новых предложений.</p>
+                        <p>Не следует, однако забывать, что реализация намеченных плановых заданий представляет собой интересный эксперимент проверки дальнейших направлений развития.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="person">
+                            <div class="left">
+                                <div class="avatar">
+                                    <img src="img/avatar.jpg" alt="avatar">
+                                </div>
+                                <div class="info">
+                                    <div class="top bold">Евгений Вольнов</div>
+                                    <div class="bottom">
+                                        <div>Transtar Corp.</div>
+                                        <div>Гендиректор</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="info">
+                                    <div class="top">
+                                        <div class="bold">Заказал:</div>
+                                        <div>Корпоративный сайт</div>
+                                        <a href="">transtar.com</a>
+                                    </div>
+                                    <div class="bottom">17.05.2017</div>
+                                </div>
+                            </div>
+                        </div>
+                        <p>С другой стороны реализация намеченных плановых заданий влечет за собой процесс внедрения и модернизации форм развития. Значимость этих проблем настолько очевидна, что новая модель организационной деятельности влечет за собой процесс внедрения и модернизации форм развития. </p>
+                        <p>Равным образом укрепление и развитие структуры позволяет выполнять важные задания по разработке новых предложений.</p>
+                        <p>Не следует, однако забывать, что реализация намеченных плановых заданий представляет собой интересный эксперимент проверки дальнейших направлений развития.</p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="nav prev"></div>
+                <div class="nav next"></div>
+            </div>
+        </div>
+    </section>
+    <section id="blog">
+        <div class="content">
+            <p class="title">Наш блог</p>
+            <p class="description">Мы делимся своими мыслями с окружающими!</p>
+            <div class="list">
+                <div class="blog">
+                    <div class="poster">
+                        <img src="img/portfolio1.png" alt="blog">
+                    </div>
+                    <div class="footer">
+                        <div class="left">Проведение правильного брифинга</div>
+                        <div class="right">
+                            <div class="like">23</div>
+                            <div class="watch">100</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog">
+                    <div class="poster">
+                        <img src="img/portfolio1.png" alt="blog">
+                    </div>
+                    <div class="footer">
+                        <div class="left">Проведение правильного брифинга</div>
+                        <div class="right">
+                            <div class="like">23</div>
+                            <div class="watch">100</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog">
+                    <div class="poster">
+                        <img src="img/portfolio1.png" alt="blog">
+                    </div>
+                    <div class="footer">
+                        <div class="left">Проведение правильного брифинга</div>
+                        <div class="right">
+                            <div class="like">23</div>
+                            <div class="watch">100</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sectionAction">
+                <a href="#" class="link">Читать другие статьи</a>
+            </div>
+        </div>
+    </section>
+    <section id="contacts">
+        <div class="content">
+            <p class="title">Наши Контакты</p>
+            <p class="description">Мы готовы воплотить в жизнь любые Ваши задумки, <br />
+                дабы Вы добились поставленных целей</p>
+            <div class="list">
+                <div class="contact">
+                    <div class="icon"></div>
+                    <div class="link">yorich@info.com</div>
+                </div>
+                <div class="contact">
+                    <div class="icon"></div>
+                    <div class="link">+7 495 5203500</div>
+                </div>
+                <div class="contact">
+                    <div class="icon"></div>
+                    <div class="link">yorich-development</div>
+                </div>
+                <div class="contact">
+                    <div class="icon"></div>
+                    <div class="link">vk.com/yorich</div>
+                </div>
+                <div class="contact">
+                    <div class="icon"></div>
+                    <div class="link">9:00 - 18:00, Пн.-Пт.</div>
+                </div>
+            </div>
+            <form class="form" action="/">
+                <div class="head">Оставьте заявку,<br /> и мы свяжемся с Вами в самое ближайшее время</div>
+                <div class="body">
+                    <div class="inputBox">
+                        <input name="login" type="text" placeholder="Введите телефон или почту">
+                        <!--<p class="error"></p>-->
+                    </div>
+                    <div class="inputBox">
+                        <input name="login" type="text" placeholder="Введите имя (не обязательно)">
+                        <!--<p class="error"></p>-->
+                    </div>
+                </div>
+                <div class="action">
+                    <button type="button">Получить бесплатный концепт</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="content">
+            <div class="lastTitle">Разработка качественных сайтов «под ключ»</div>
+            <div class="info">
+                <ul class="list">
+                    <li>+7 495 5203500</li>
+                    <li>yorich-development</li>
+                    <li>9:00 - 18:00, Пн.-Пт.</li>
+                    <li>yorich@info.com</li>
+                </ul>
+                <div class="links">
+                    <a href="#" class="vk"></a>
+                    <a href="#" class="ig"></a>
+                </div>
+            </div>
+        </div>
+        <div class="rights">Все права защищены</div>
+    </footer>
+    <script src="js/libs/libs.js"></script>
+    <!--<script src="js/libs/bootstrap.min.js"></script>-->
+    <script src="js/main.js"></script>
+</body>
+</html>
