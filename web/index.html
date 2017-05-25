@@ -41,10 +41,11 @@
                     </div></div>
                 <div class="body">
                     <div class="inputBox">
-                        <input name="login" type="text" placeholder="Введите телефон или почту">
+                        <input name="login" type="text" placeholder="Введите телефон или почту" required>
+                        <p class="error">Некорректрый телефон или почта</p>
                     </div>
                     <div class="inputBox">
-                        <input name="login" type="text" placeholder="Введите имя (не обязательно)">
+                        <input name="name" type="text" placeholder="Введите имя (не обязательно)">
                     </div>
                 </div>
                 <div class="action">
@@ -134,11 +135,11 @@
                 <div class="head">Оставьте заявку,<br /> и мы свяжемся с Вами в самое ближайшее время</div>
                 <div class="body">
                     <div class="inputBox">
-                        <input name="login" type="text" placeholder="Введите телефон или почту">
-                        <!--<p class="error"></p>-->
+                        <input name="login" type="text" placeholder="Введите телефон или почту" required>
+                        <p class="error">Некорректрый телефон или почта</p>
                     </div>
                     <div class="inputBox">
-                        <input name="login" type="text" placeholder="Введите имя (не обязательно)">
+                        <input name="name" type="text" placeholder="Введите имя (не обязательно)">
                         <!--<p class="error"></p>-->
                     </div>
                 </div>
@@ -493,11 +494,11 @@
                 <div class="head">Оставьте заявку,<br /> и мы свяжемся с Вами в самое ближайшее время</div>
                 <div class="body">
                     <div class="inputBox">
-                        <input name="login" type="text" placeholder="Введите телефон или почту">
-                        <!--<p class="error"></p>-->
+                        <input name="login" type="text" placeholder="Введите телефон или почту" required>
+                        <p class="error">Некорректрый телефон или почта</p>
                     </div>
                     <div class="inputBox">
-                        <input name="login" type="text" placeholder="Введите имя (не обязательно)">
+                        <input name="name" type="text" placeholder="Введите имя (не обязательно)">
                         <!--<p class="error"></p>-->
                     </div>
                 </div>
@@ -534,10 +535,11 @@
                 </div></div>
             <div class="body">
                 <div class="inputBox">
-                    <input name="login" type="text" placeholder="Введите телефон или почту">
+                    <input name="login" type="text" placeholder="Введите телефон или почту" required>
+                    <p class="error">Некорректрый телефон или почта</p>
                 </div>
                 <div class="inputBox">
-                    <input name="login" type="text" placeholder="Введите имя (не обязательно)">
+                    <input name="name" type="text" placeholder="Введите имя (не обязательно)">
                 </div>
             </div>
             <div class="action">
@@ -577,8 +579,10 @@
                 <div class="nav port-next"></div>
             </div>
         </div>
-        <div class="hover"></div>
+        <div class="modal thanks">Благодарим за то что бырали нас! Мы свяжемся с Вами в течении дня!</div>
+        <div class="overlay"></div>
     </div>
+    <div class="preLoader"></div>
     <script src="js/libs/libs.js"></script>
     <script src="js/main.js"></script>
 </body>

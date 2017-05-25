@@ -61,6 +61,17 @@ section {
 					border-bottom: 4px solid $lightRedCol;
 				}
 			}
+			.error {
+				margin-top: 5px;
+				color: $lightRedCol;
+				font-size: 14px;
+				display: none;
+			}
+			&.invalid {
+				.error {
+					display: block;
+				}
+			}
 		}
 	}
 	.action {
@@ -81,6 +92,7 @@ section {
 			max-width: 420px;
 			width: 80%;
 			margin-bottom: 40px;
+			cursor: pointer;
 			&:hover {
 				background: $hoverBtn;
 			}

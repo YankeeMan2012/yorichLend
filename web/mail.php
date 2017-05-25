@@ -1,18 +1,10 @@
 <?php
-$telephone = $_POST['telephone'];
-$whatsapp = $_POST['whatsapp'];
-$skype = $_POST['skype'];
-$email = $_POST['email'];
+$login = $_POST['login'];
+$name = $_POST['name'];
+$resName = '';
 
-$link = '';
-if (isset($telephone)) {
-    $link = 'телефону: ' . $telephone;
-} elseif (isset($whatsapp)) {
-    $link = 'WhatSapp: ' . $whatsapp;
-} elseif (isset($skype)) {
-    $link = 'Skype: ' . $skype;
-} elseif (isset($email)) {
-    $link = 'E-mail: ' . $email;
+if ($name !== '') {
+    $resName = 'Имя клиента: ' . $name;
 }
 
 $to  = "yankeeman2012@mail.ru";
@@ -25,7 +17,8 @@ $message = '<html>
                 </head>
                 <body>
                     <p>Клиент просит, чтобы с ним связались:</p>
-                    <p>Клиенту удобна связь по '. $link .'</p>
+                    <p>Контакт клиента: '. $login .'</p>
+                    <p>'. $resName .'</p>
                 </body>
             </html>';
 

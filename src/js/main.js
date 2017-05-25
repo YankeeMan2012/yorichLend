@@ -14,8 +14,28 @@ var AppJS = {
         $('.menu a').on('click', function(e)  { AppJS.closeMenu(e) });
         $('body').on('click', function(e)  { AppJS.bodyClick(e); });
         $('.addApplication').on('click', function()  { $('.modalBox').addClass('openForm'); });
-        $('.hover, .close').on('click', function()  { $('.modalBox').removeClass('openForm openPortfolio'); });
+        $('.overlay, .close').on('click', function()  { $('.modalBox').removeClass('openForm openPortfolio openThanks'); });
         $('#portfolio .site a').on('click', function(e)  { e.preventDefault(); $('.modalBox').addClass('openPortfolio'); });
+        $('.form button').on('click', function(e)  { AppJS.ajaxSubmit(e, this); });
+    },
+
+    ajaxSubmit: function (e, submit) {
+        e.preventDefault();
+        var regEmail = /^\w+([\.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,4})+$/;
+        var regMobile = /^\+?[\d]{1,3}(-|\s)?\(?[\d]{1,3}\)?(-|\s)?[\d](-|\s)?[\d](-|\s)?[\d](-|\s)?[\d](-|\s)?[\d](-|\s)?[\d](-|\s)?\d$/;
+        var preLoader = $('.preLoader');
+        var form = $(submit).closest('form');
+        var data = form.serializeArray();
+        $('.invalid').removeClass('invalid');
+        if (regEmail.test(data[0].value) || regMobile.test(data[0].value)) {
+            preLoader.show();
+            $.post('/mail.php', data, function () {
+                $('.modalBox').addClass('openThanks');
+                preLoader.hide();
+            });
+        } else {
+            form.find('[name="login"]').closest('.inputBox').addClass('invalid');
+        }
     },
 
     switchMenu: function() {
