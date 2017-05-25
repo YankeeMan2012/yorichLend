@@ -153,6 +153,21 @@
 					}
 				}
 			}
+			.nav {
+				width: 25px;
+				height: 25px;
+				right: 1px;
+				&:before {
+					top: 7px;
+					left: 11px;
+				}
+				&.prev {
+					left: 1px;
+					&:before {
+						left: 3px;
+					}
+				}
+			}
 		}
 	}
 }

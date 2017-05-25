@@ -14,7 +14,7 @@ var AppJS = {
         $('.menu a').on('click', function(e)  { AppJS.closeMenu(e) });
         $('body').on('click', function(e)  { AppJS.bodyClick(e); });
         $('.addApplication').on('click', function()  { AppJS.modalForm(this); });
-        $('.overlay, .close').on('click', function()  { $('.modalBox').removeClass('openForm openPortfolio openThanks'); });
+        $('.overlay, .close').on('click', function()  { AppJS.closeModal(); });
         $('#portfolio .site a').on('click', function(e)  { e.preventDefault(); $('.modalBox').addClass('openPortfolio'); });
         $('.form button').on('click', function(e)  { AppJS.ajaxSubmit(e, this); });
     },
@@ -46,6 +46,11 @@ var AppJS = {
         $('.modalBox').addClass('openForm');
     },
 
+    closeModal: function () {
+        $('.modalBox').removeClass('openForm openPortfolio openThanks');
+        $('.modalBox .successForm').removeClass('successForm');
+    },
+
     ajaxSubmit: function (e, submit) {
         e.preventDefault();
         var regEmail = /^\w+([\.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,4})+$/;
@@ -56,9 +61,9 @@ var AppJS = {
         $('.invalid').removeClass('invalid');
         if (regEmail.test(data[1].value) || regMobile.test(data[1].value)) {
             preLoader.show();
-            $('.openForm').removeClass('openForm');
             $.post('/mail.php', data, function () {
-                $('.modalBox').addClass('openThanks');
+                form.addClass('successForm');
+                // $('.modalBox').addClass('openThanks');
                 preLoader.hide();
             });
         } else {
