@@ -1,7 +1,25 @@
 <?php
 $login = $_POST['login'];
 $name = $_POST['name'];
+$title = $_POST['title'];
 $resName = '';
+
+$label = 'Заявка на разработку';
+
+switch ($title) {
+    case '1': $title = $label . ' - LANDING PAGE';
+        break;
+    case '2': $title = $label . ' - САЙТ-ВИЗИТКА';
+        break;
+    case '3': $title = $label . ' - КОРПОРАТИВНЫЙ САЙТ';
+        break;
+    case '4': $title = $label . ' - ИНТЕРНЕТ-КАТАЛОГ';
+        break;
+    case '5': $title = $label . ' - ИНТЕРНЕТ-МАГАЗИН';
+        break;
+    case '6': $title = $label . ' - БЛОГ/НОВОСТНОЙ ПОРТАЛ';
+        break;
+}
 
 if ($name !== '') {
     $resName = 'Имя клиента: ' . $name;
@@ -9,14 +27,15 @@ if ($name !== '') {
 
 $to  = "yankeeman2012@mail.ru";
 
-$subject = "Обратная связь YoRich";
+$subject = "Обратная связь YoRich - " . $title;
 
 $message = '<html>
                 <head>
-                    <title>Клиент просит, чтобы с ним связались:</title>
+                    <title>'. $title .'</title>
                 </head>
                 <body>
-                    <p>Клиент просит, чтобы с ним связались:</p>
+                    <p>'. $title .'</p>
+                    <p>Клиент просит, чтобы с ним связались!</p>
                     <p>Контакт клиента: '. $login .'</p>
                     <p>'. $resName .'</p>
                 </body>

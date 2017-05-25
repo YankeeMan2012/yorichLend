@@ -13,10 +13,37 @@ var AppJS = {
         $('.sandWhich').on('click', function()  { AppJS.switchMenu(); });
         $('.menu a').on('click', function(e)  { AppJS.closeMenu(e) });
         $('body').on('click', function(e)  { AppJS.bodyClick(e); });
-        $('.addApplication').on('click', function()  { $('.modalBox').addClass('openForm'); });
+        $('.addApplication').on('click', function()  { AppJS.modalForm(this); });
         $('.overlay, .close').on('click', function()  { $('.modalBox').removeClass('openForm openPortfolio openThanks'); });
         $('#portfolio .site a').on('click', function(e)  { e.preventDefault(); $('.modalBox').addClass('openPortfolio'); });
         $('.form button').on('click', function(e)  { AppJS.ajaxSubmit(e, this); });
+    },
+
+    modalForm: function (el) {
+        var index = $(el).closest('.card').index() + 1;
+        var link = $('.form.modal .wrap a');
+        $('.form.modal [name="title"]').val(index);
+        switch (index) {
+            case 1:
+                link.text('LANDING PAGE');
+                break;
+            case 2:
+                link.text('САЙТА-ВИЗИТКИ');
+                break;
+            case 3:
+                link.text('КОРПОРАТИВНОГО САЙТА');
+                break;
+            case 4:
+                link.text('ИНТЕРНЕТ-КАТАЛОГА');
+                break;
+            case 5:
+                link.text('ИНТЕРНЕТ-МАГАЗИНА');
+                break;
+            case 6:
+                link.text('БЛОГА/НОВОСТНОГО ПОРТАЛА');
+                break;
+        }
+        $('.modalBox').addClass('openForm');
     },
 
     ajaxSubmit: function (e, submit) {
@@ -27,8 +54,9 @@ var AppJS = {
         var form = $(submit).closest('form');
         var data = form.serializeArray();
         $('.invalid').removeClass('invalid');
-        if (regEmail.test(data[0].value) || regMobile.test(data[0].value)) {
+        if (regEmail.test(data[1].value) || regMobile.test(data[1].value)) {
             preLoader.show();
+            $('.openForm').removeClass('openForm');
             $.post('/mail.php', data, function () {
                 $('.modalBox').addClass('openThanks');
                 preLoader.hide();
