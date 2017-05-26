@@ -58,7 +58,7 @@ section {
 				font-size: 14px;
 				border-bottom: 4px solid $lighterRedCol;
 				padding: 5px 0;
-				color: #fff;
+				color: $textCol;
 				&:hover, &:focus {
 					border-bottom: 4px solid $lightRedCol;
 				}
@@ -133,6 +133,13 @@ section {
 	&:not(.homeForm) {
 		&.successForm {
 			background: rgba(16,31,40,.5);
+		}
+	}
+	&.homeForm {
+		.body {
+			input {
+				color: #fff;
+			}
 		}
 	}
 }
@@ -1023,23 +1030,3 @@ footer {
 		line-height: 38px;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
