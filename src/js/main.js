@@ -15,8 +15,15 @@ var AppJS = {
         $('body').on('click', function(e)  { AppJS.bodyClick(e); });
         $('.addApplication').on('click', function()  { AppJS.modalForm(this); });
         $('.overlay, .close').on('click', function()  { AppJS.closeModal(); });
-        $('#portfolio .site a').on('click', function(e)  { e.preventDefault(); $('.modalBox').addClass('openPortfolio'); });
+        $('#portfolio .site a').on('click', function(e)  { AppJS.openPortfolio(e, this); });
         $('.form button').on('click', function(e)  { AppJS.ajaxSubmit(e, this); });
+    },
+
+    openPortfolio: function (e, el) {
+        e.preventDefault();
+        var index = $(el).closest('.site').index() + 1;
+        AppJS.portSlider.slideTo(index, 0);
+        $('.modalBox').addClass('openPortfolio');
     },
 
     modalForm: function (el) {
@@ -105,7 +112,7 @@ var AppJS = {
             loop: true
         });
 
-        var port = new Swiper ('#portSlider', {
+        AppJS.portSlider = new Swiper ('#portSlider', {
             prevButton: '.port-prev',
             nextButton: '.port-next',
             speed: 700,

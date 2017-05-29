@@ -247,21 +247,23 @@ header {
 	}
 }
 
+.video {
+	min-width: 100%;
+	min-height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -10;
+}
+
 #home {
 	padding-top: 90px;
 	min-height: 100vh;
 	box-sizing: border-box;
 	overflow: hidden;
 	position: relative;
-	background: transparent;
-	.video {
-		min-width: 100%;
-		min-height: 100%;
-		position: absolute;
-		top: 0;
-		left: 0;
-		z-index: -10;
-	}
+	//background: transparent;
+	background: rgba(16,31,40,.4);
 	.content {
 		height: 100%;
 		.form {
@@ -880,7 +882,9 @@ header {
 
 #contacts {
 	padding-bottom: 40px;
-	background: url('../img/contacts.jpg') center center / cover no-repeat;
+	background: rgba(255, 255, 255, 0.7);
+	position: relative;
+	overflow: hidden;
 	.content {
 		.list {
 			display: flex;
